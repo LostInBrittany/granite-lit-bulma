@@ -34,33 +34,37 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           }
       })();
 
-
     </script>
     <!--<script type="module" src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>-->
-
-
 
     <script type="module" src="./granite-bulma-example.js"></script>
 
     <script type="module">
-      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
       import '@polymer/iron-demo-helpers/demo-snippet';
+      import {bulmaStyle} from '../granite-lit-bulma.js';
+
+      let bodyStyle = document.createElement("style");
+      document.head.appendChild(bodyStyle);
+      let rules = Array.from(bulmaStyle.styleSheet.cssRules);
+      // apply Bulma CSSRules
+      rules
+        .filter(item => item.selectorText!==undefined)
+        .forEach(rule => bodyStyle.sheet.insertRule(rule.cssText));
+
     </script>
 
-
-    <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-      </style>
-    </custom-style>
   </head>
   <body>
-    <div class="vertical-section-container centered">
-      <h3>Basic granite-bulma demo</h3>
-      <demo-snippet>
-        <template>
-          <granite-bulma-example></granite-bulma-example>
-        </template>
-      </demo-snippet>
-    </div>
+    <section class="section">
+      <div class="container">
+        <h3 class="title">Basic granite-bulma demo</h3>
+        <demo-snippet>
+          <template>
+            <granite-bulma-example></granite-bulma-example>
+          </template>
+        </demo-snippet>
+      </div>
+    </section>
+
   </body>
 </html>
