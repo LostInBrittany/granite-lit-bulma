@@ -43,14 +43,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       import '@polymer/iron-demo-helpers/demo-snippet';
       import {bulmaStyle} from '../granite-lit-bulma.js';
 
-      let bodyStyle = document.createElement("style");
-      document.head.appendChild(bodyStyle);
-      let rules = Array.from(bulmaStyle.styleSheet.cssRules);
-      // apply Bulma CSSRules
-      rules
-        .filter(item => item.selectorText!==undefined)
-        .forEach(rule => bodyStyle.sheet.insertRule(rule.cssText));
-
+      document.adoptedStyleSheets = [bulmaStyle.styleSheet];
     </script>
 
   </head>
