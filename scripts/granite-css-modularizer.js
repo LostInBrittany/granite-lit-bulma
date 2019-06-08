@@ -47,7 +47,7 @@ if (process.argv.length != 4) {
 
 import { css } from 'lit-element';
 
-const styles = css\`
+export const bulmaStyle = css\`
 `;
   }
 
@@ -55,7 +55,7 @@ const styles = css\`
     return `
 
 \`;
-export default styles;\n`;
+\n`;
   }
   
   let transformFile = function(item) {
