@@ -16,7 +16,7 @@
 
 import { css } from 'lit-element';
 
-const styles = css`
+export const bulmaStyle = css`
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
@@ -10618,4 +10618,4 @@ label.panel-block:hover {
 /*# sourceMappingURL=bulma.css.map */
 
 `;
-export default styles;
+
