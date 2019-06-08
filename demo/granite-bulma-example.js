@@ -1,9 +1,9 @@
 import { html, LitElement } from 'lit-element';
-import bulmaStyle from '../granite-lit-bulma.js';
+import {bulmaStyle} from '../granite-lit-bulma.js';
 
 class GraniteBulmaExample extends LitElement {
   static get styles() {
-    return bulmaStyle;
+    return [bulmaStyle];
   }
   render() {
     return html`
