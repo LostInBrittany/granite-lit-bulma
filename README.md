@@ -50,11 +50,11 @@ class GraniteBulmaExample extends LitElement {
 
 ```js
 import { html, LitElement } from 'lit-element';
-import {bulmaStyle} from '../granite-lit-bulma.js';
+import {styles} from '../granite-lit-bulma.js';
 
 class GraniteBulmaExample extends LitElement {
   static get styles() {
-    return [bulmaStyle];
+    return [styles];
   }
   render() {
     return html`

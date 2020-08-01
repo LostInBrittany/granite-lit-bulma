@@ -16,7 +16,7 @@
 
 import { css } from 'lit-element';
 
-export const bulmaStyle = css`
+export const styles = css`
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {

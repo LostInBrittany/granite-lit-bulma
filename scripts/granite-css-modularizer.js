@@ -47,7 +47,7 @@ if (process.argv.length != 4) {
 
 import { css } from 'lit-element';
 
-export const bulmaStyle = css\`
+export const styles = css\`
 `;
   }
 
