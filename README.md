@@ -26,7 +26,7 @@ Once installed, import it in your application. Usually you will simply want to i
 Supossing you want to import `granite-lit-bulma.js`:
  
 ```
-import {bulmaStyle} from '@granite-elements/granite-lit-bulma/granite-lit-bulma.js';
+import {bulmaStyles} from '@granite-elements/granite-lit-bulma/granite-lit-bulma.js';
 ``` 
 
 #### 3. Inside your component, use *granite-lit-bulma* in the static `styles` property
@@ -36,7 +36,7 @@ import {bulmaStyle} from '@granite-elements/granite-lit-bulma/granite-lit-bulma.
 
 class GraniteBulmaExample extends LitElement {
   static get styles() {
-    return [bulmaStyle];
+    return [bulmaStyles];
   }
   render() {
     return html`
@@ -50,11 +50,11 @@ class GraniteBulmaExample extends LitElement {
 
 ```js
 import { html, LitElement } from 'lit-element';
-import {styles} from '../granite-lit-bulma.js';
+import {bulmaStyles} from '../granite-lit-bulma.js';
 
 class GraniteBulmaExample extends LitElement {
   static get styles() {
-    return [styles];
+    return [bulmaStyles];
   }
   render() {
     return html`

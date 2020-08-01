@@ -1,22 +1,22 @@
   
 /**
-  @license Apache 2.0
-  Copyright (c) 2017 Horacio "LostInBrittany" Gonzalez for the style module encapsulation of CSS files
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-      http://www.apache.org/licenses/LICENSE-2.0
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  @demo demo/index.html
+@license Apache 2.0
+Copyright (c) 2020 Horacio "LostInBrittany" Gonzalez for the style module encapsulation of CSS files
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+@demo demo/index.html
 */
 
 import { css } from 'lit-element';
 
-export const styles = css`
+export const bulmaStyles = css`
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
@@ -297,7 +297,7 @@ textarea {
   margin: 0;
 }
 
-html {
+:host {
   box-sizing: border-box;
 }
 
@@ -330,7 +330,7 @@ th:not([align]) {
   text-align: inherit;
 }
 
-html {
+:host {
   background-color: white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -370,7 +370,7 @@ pre {
   font-family: monospace;
 }
 
-body {
+:host {
   color: #4a4a4a;
   font-size: 1em;
   font-weight: 400;
@@ -2789,7 +2789,7 @@ fieldset[disabled] .button {
   color: #363636;
 }
 
-.table tbody {
+.table t:host {
   background-color: transparent;
 }
 
@@ -4415,7 +4415,7 @@ fieldset[disabled] .select select:hover {
 }
 
 @media screen and (min-width: 769px), print {
-  .field-body {
+  .field-:host {
     display: flex;
     flex-basis: 0;
     flex-grow: 5;
@@ -5027,7 +5027,7 @@ button.dropdown-item.is-active {
   color: #0a0a0a;
 }
 
-.message.is-white .message-body {
+.message.is-white .message-:host {
   border-color: white;
 }
 
@@ -5040,7 +5040,7 @@ button.dropdown-item.is-active {
   color: white;
 }
 
-.message.is-black .message-body {
+.message.is-black .message-:host {
   border-color: #0a0a0a;
 }
 
@@ -5053,7 +5053,7 @@ button.dropdown-item.is-active {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.message.is-light .message-body {
+.message.is-light .message-:host {
   border-color: whitesmoke;
 }
 
@@ -5066,7 +5066,7 @@ button.dropdown-item.is-active {
   color: #fff;
 }
 
-.message.is-dark .message-body {
+.message.is-dark .message-:host {
   border-color: #363636;
 }
 
@@ -5079,7 +5079,7 @@ button.dropdown-item.is-active {
   color: #fff;
 }
 
-.message.is-primary .message-body {
+.message.is-primary .message-:host {
   border-color: #00d1b2;
   color: #00947e;
 }
@@ -5093,7 +5093,7 @@ button.dropdown-item.is-active {
   color: #fff;
 }
 
-.message.is-link .message-body {
+.message.is-link .message-:host {
   border-color: #3273dc;
   color: #2160c4;
 }
@@ -5107,7 +5107,7 @@ button.dropdown-item.is-active {
   color: #fff;
 }
 
-.message.is-info .message-body {
+.message.is-info .message-:host {
   border-color: #3298dc;
   color: #1d72aa;
 }
@@ -5121,7 +5121,7 @@ button.dropdown-item.is-active {
   color: #fff;
 }
 
-.message.is-success .message-body {
+.message.is-success .message-:host {
   border-color: #48c774;
   color: #257942;
 }
@@ -5135,7 +5135,7 @@ button.dropdown-item.is-active {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.message.is-warning .message-body {
+.message.is-warning .message-:host {
   border-color: #ffdd57;
   color: #947600;
 }
@@ -5149,7 +5149,7 @@ button.dropdown-item.is-active {
   color: #fff;
 }
 
-.message.is-danger .message-body {
+.message.is-danger .message-:host {
   border-color: #f14668;
   color: #cc0f35;
 }
@@ -5173,13 +5173,13 @@ button.dropdown-item.is-active {
   margin-right: 0.75em;
 }
 
-.message-header + .message-body {
+.message-header + .message-:host {
   border-width: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.message-body {
+.message-:host {
   border-color: #dbdbdb;
   border-radius: 4px;
   border-style: solid;
@@ -5285,7 +5285,7 @@ button.dropdown-item.is-active {
   margin-left: 0.5em;
 }
 
-.modal-card-body {
+.modal-card-:host {
   -webkit-overflow-scrolling: touch;
   background-color: white;
   flex-grow: 1;
@@ -11238,23 +11238,23 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
 }
 
-.hero.is-small .hero-body {
+.hero.is-small .hero-:host {
   padding: 1.5rem;
 }
 
 @media screen and (min-width: 769px), print {
-  .hero.is-medium .hero-body {
+  .hero.is-medium .hero-:host {
     padding: 9rem 1.5rem;
   }
 }
 
 @media screen and (min-width: 769px), print {
-  .hero.is-large .hero-body {
+  .hero.is-large .hero-:host {
     padding: 18rem 1.5rem;
   }
 }
 
-.hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body {
+.hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-:host {
   align-items: center;
   display: flex;
 }
@@ -11324,7 +11324,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   flex-shrink: 0;
 }
 
-.hero-body {
+.hero-:host {
   flex-grow: 1;
   flex-shrink: 0;
   padding: 3rem 1.5rem;
@@ -11348,6 +11348,4 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=bulma-rtl.css.map */
-
-`;
-
+`
