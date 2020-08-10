@@ -3,13 +3,6 @@
 *granite-lit-bulma* is a wrapping of [Bulma CSS](https://picturepan2.github.io/bulma/) CSS as [LitElement](https://lit-element.polymer-project.org/) [lit-html CSS TemplateResult](https://lit-element.polymer-project.org/guide/styles) to be used in LitElement web components.
 
 
-
-## Doc & demo
-
-[https://lostinbrittany.github.io/granite-lit-bulma](https://lostinbrittany.github.io/granite-lit-bulma)
-
-
-
 ### Using `granite-lit-bulma`
 
 To use *granite-lit-bulma* in an element:
@@ -114,10 +107,10 @@ customElements.define('granite-bulma-example', GraniteBulmaExample);
     ```
      npm install
     ```
-+   Run the Polymer development server from the root project directory:
++   Run the [es-dev-server](https://open-wc.org/developing/es-dev-server.html) development server from the root project directory:
 
     ```
-    polymer serve --npm
+    npm run serve
     ```
 
 

@@ -36,28 +36,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     </script>
     <!--<script type="module" src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>-->
-
-    <script type="module" src="./granite-bulma-example.js"></script>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>granite-lit-bulma</h3>
+      <div id="demo1"></div>
+    </div>
 
     <script type="module">
-      import '@polymer/iron-demo-helpers/demo-snippet';
+      import { html, render } from 'lit-html';
       import {bulmaStyle} from '../granite-lit-bulma.js';
 
       document.adoptedStyleSheets = [bulmaStyle.styleSheet];
+
+      render(
+        html`
+          <p>Here you have an example of a table rendered using Bulma:</p>
+          
+          <granite-bulma-example></granite-bulma-example>
+        `,
+        document.querySelector('#demo1')
+      );
     </script>
-
-  </head>
-  <body>
-    <section class="section">
-      <div class="container">
-        <h3 class="title">Basic granite-bulma demo</h3>
-        <demo-snippet>
-          <template>
-            <granite-bulma-example></granite-bulma-example>
-          </template>
-        </demo-snippet>
-      </div>
-    </section>
-
   </body>
 </html>
