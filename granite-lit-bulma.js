@@ -16,7 +16,7 @@
 
 import { css } from 'lit-element';
 
-const styles = css`
+export const bulmaStyle = css`
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
@@ -11350,4 +11350,4 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /*# sourceMappingURL=bulma.css.map */
 
 `;
-export default styles;
+

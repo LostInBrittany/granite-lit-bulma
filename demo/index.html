@@ -34,7 +34,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           }
       })();
 
-
     </script>
     <!--<script type="module" src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>-->
   </head>
@@ -46,7 +45,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     <script type="module">
       import { html, render } from 'lit-html';
-      import './granite-bulma-example.js';
+      import {bulmaStyle} from '../granite-lit-bulma.js';
+
+      document.adoptedStyleSheets = [bulmaStyle.styleSheet];
 
       render(
         html`
