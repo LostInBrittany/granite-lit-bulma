@@ -1,6 +1,6 @@
 {
   "name": "@granite-elements/granite-lit-bulma",
-  "description": "Wrapping of *Bulma CSS* as a LitElement CSS TemplateResult to be used in LitElement web components",
+  "description": "Wrapping of *Bulma CSS* as a Lit CSS TemplateResult to be used in Lit web components",
   "main": "granite-lit-bulma-min.js",
   "module": "granite-lit-bulma-min.js",
   "author": "Horacio Gonzalez <horacio.gonzalez@gmail.com>",
@@ -10,18 +10,17 @@
   },
   "homepage": "https://github.com/lostinbrittany/granite-lit-bulma",
   "dependencies": {
-    "lit-element": "^2.3.1"
+    "lit": "^2.0.0-rc.1"
   },
   "scripts": {
     "prepare": "node ./node_modules/granite-lit-css-modularizer/granite-lit-css-modularizer.js ./node_modules/bulma/css . bulmaStyles",
     "serve": "npx es-dev-server --node-resolve --watch"
   },
-  "version": "0.9.0-4",
+  "version": "0.9.2-0",
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "^2.4.4",
-    "es-dev-server": "^1.56.1",
-    "granite-lit-css-modularizer": "^1.0.4",
-    "minimist": "^1.2.5",
-    "bulma": "0.9.0"
+    "@webcomponents/webcomponentsjs": "^2.5.0",
+    "bulma": "0.9.2",
+    "es-dev-server": "^2.1.0",
+    "granite-lit-css-modularizer": "^2.0.0"
   }
 }
