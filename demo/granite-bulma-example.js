@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import {bulmaStyles} from '../granite-lit-bulma.js';
 
 class GraniteBulmaExample extends LitElement {
